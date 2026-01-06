@@ -1,0 +1,38 @@
+.menu-bar {
+    position: fixed;
+    font-family: "Pixel Game";
+    gap: 100px;
+}
+
+.judul {
+    font-family: "Pixel Game";
+    padding-top: 10px;
+    color: #F08A3C;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pop1 {
+    float: left;
+    font-family: "Pixel Game";
+    color: #E62C67;
+}
+
+h3 {
+    color: #F05DA2;
+}
+
+.mini-teori {
+    float: left;
+    font-family: "Pixel Game";
+    color: #F08A3C;
+    padding-left: 100px;
+}
+
+.pop2 {
+    float: left;
+    font-family: "Pixel Game";
+    color: #E62C67;
+    padding-left: 100px;
+}
