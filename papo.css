@@ -1,7 +1,19 @@
 .menu-bar {
+    display: flex;
     position: fixed;
     font-family: "Pixel Game";
-    gap: 100px;
+    background-color: white;
+    width: 100%;
+    font-size: medium;
+    gap: 20px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFEE58;
+    height: 100vh;
 }
 
 .judul {
@@ -11,12 +23,18 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #FFEE58;
+    padding-top: 30px;
 }
 
 .pop1 {
-    float: left;
     font-family: "Pixel Game";
     color: #E62C67;
+
+}
+
+.pop1h2 {
+    text-align: center;
 }
 
 h3 {
@@ -28,11 +46,87 @@ h3 {
     font-family: "Pixel Game";
     color: #F08A3C;
     padding-left: 100px;
+    text-align: center;
+
 }
 
+
 .pop2 {
-    float: left;
     font-family: "Pixel Game";
     color: #E62C67;
     padding-left: 100px;
+}
+
+.pop2h2 {
+    text-align: center;
+}
+
+body {
+    margin: 0%;
+}
+
+.mini-teori-mobile {
+    display: none;
+}
+
+
+@media(max-width:800px) {
+    .mini-teori {
+        display: none;
+    }
+
+    .mini-teori-mobile {
+        display: block;
+        flex-direction: column;
+        font-family: "Pixel Game";
+        color: #F08A3C;
+        text-align: center;
+        height: 220px;
+        width: 100vh;
+
+    }
+
+    .container {
+        flex-wrap: wrap;
+        /* flex-wrap= biar kalau ukurannya ga sesuai trus ak mau ukurannya swsuai
+        jadi pake flex wrap biar ukurnnya tetep sesuai dan otomatis item ke bawah  */
+    }
+}
+
+@media(max-width:400px) {
+    .judul {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .mini-teori {
+        display: none;
+    }
+
+    .mini-teori-mobile {
+        float: left;
+        font-family: "Pixel Game";
+        color: #F08A3C;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pop1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+    }
+
+    .pop2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+        padding-top: 5cap;
+    }
 }
