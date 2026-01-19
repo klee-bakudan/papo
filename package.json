@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "jstat": "^1.9.6"
+  },
+  "name": "papo-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "input.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klee-bakudan/papo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/klee-bakudan/papo/issues"
+  },
+  "homepage": "https://github.com/klee-bakudan/papo#readme"
+}

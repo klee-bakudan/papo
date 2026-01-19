@@ -69,6 +69,23 @@ body {
     display: none;
 }
 
+.inputbtn {
+    display: none;
+    top: 500px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+}
 
 @media(max-width:800px) {
     .mini-teori {
@@ -91,6 +108,7 @@ body {
         /* flex-wrap= biar kalau ukurannya ga sesuai trus ak mau ukurannya swsuai
         jadi pake flex wrap biar ukurnnya tetep sesuai dan otomatis item ke bawah  */
     }
+
 }
 
 @media(max-width:400px) {
@@ -129,4 +147,5 @@ body {
         padding-left: 0%;
         padding-top: 5cap;
     }
+
 }
