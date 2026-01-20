@@ -87,6 +87,10 @@ body {
     flex-direction: column;
 }
 
+
+
+
+
 @media(max-width:800px) {
     .mini-teori {
         display: none;
