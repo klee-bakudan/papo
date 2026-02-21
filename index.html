@@ -11,9 +11,14 @@
 
 <body>
     <div class="menu-bar">
-        <label for="guide book">guide book</label>
+        <a href="https://drive.google.com/file/d/1VqLGf866aCwfaKqRvJxtIFFp2zOrmRtP/view?usp=drive_link">
+            <label for="guide book">guide book</label>
+        </a>
         <label for="example">example</label>
-        <label for="report">report</label>
+        <a href="https://padlet.com/papoofficialbyus/silakan-masukkan-keluhan-atau-masukan-anda-untuk-aplikasi-pa-y9f3h9i5f6to66ml">
+            <label for="report">report</label>
+        </a>
+
     </div>
     <div class="judul">
         <h1>PENDUGAAN PARAMETER PROPORSI</h1>
@@ -39,8 +44,11 @@
 
                 <div class="inputbtn" id="inputbtn">
                     <form action="" class="input1">
+                        <label for="X">input X</label>
                         <input type="text" class="x" id="hitungx">
+                        <label for="N">input N </label>
                         <input type="text" class="n" id="hitungn">
+                        <label for="X">input Alpha</label>
                         <input type="number" min="0.00" max="0.10" step="0.01" id="hitunga">
                         <button type="submit">hitung</button>
                     </form>
@@ -51,9 +59,13 @@
                         <p id="X"></p>
                         <label for="p_topi">estimasi proporsi</label>
                         <p id="p_topi"></p>
-                        <span id="cl_bawah"></span>
-                        <span > < p < </span>
-                        <span id="cl_atas"></span>
+                        <div>
+                            <span id="cl_bawah"></span>
+                            <span>
+                                < p < </span>
+                                    <span id="cl_atas"></span>
+                        </div>
+
                     </div>
                 </div>
 
@@ -76,35 +88,45 @@
         <div class="pop2">
             <img src="gambar\2pop.png" alt="g2pop" width="250px">
             <h2 class="pop2h2">2 populasi</h2>
-            <img src="gambar\hitung.png" alt="ghitung" width="250px">
+            <img src="gambar\hitung.png" alt="ghitung" width="250px" id="hitungnow2">
 
-             <div class="inputbtn2" id="inputbtn2">
-                    <form action="" class="input2">
-                        <input type="text" class="n1" id="hitungn1">
-                        <input type="text" class="x1" id="hitungx1">
-                        <input type="text" class="n2" id="hitungn2">
-                        <input type="text" class="x2" id="hitungx2">
-                        <input type="number" min="0.00" max="0.10" step="0.01" id="hitunga2">
-                        <button type="submit">hitung</button>
-                    </form>
-                    <div class="hasil2" id="hasil2">
-                        <label for="N1">jumlah data populasi 1 (N1)</label>
-                        <p id="N1"></p>
-                        <label for="X1">jumlah sukses (X1)</label>
-                        <p id="X1"></p>
-                        <label for="N2">jumlah data populasi 2 (N2)</label>
-                        <p id="N2"></p>
-                        <label for="X2">jumlah sukses (X2)</label>
-                        <p id="X2"></p>
-                        <label for="p1topi">estimasi p1</label>
-                        <p id="p1topi"></p>
-                        <label for="p2topi">estimasi p2</label>
-                        <p id="p2topi"></p>
+            <div class="inputbtn2" id="inputbtn2">
+                <form action="" class="input2">
+                    <label for="n1">input N1</label>
+                    <input type="text" class="n1" id="hitungn1">
+                    <label for="x1">input X1</label>
+                    <input type="text" class="x1" id="hitungx1">
+                    <label for="n2">input N2</label>
+                    <input type="text" class="n2" id="hitungn2">
+                    <label for="x2">input X2</label>
+                    <input type="text" class="x2" id="hitungx2">
+                    <label for="alpha">input Alpha</label>
+                    <input type="number" min="0.00" max="0.10" step="0.01" id="hitunga2">
+                    <button type="submit">hitung</button>
+                </form>
+                <div class="hasil2" id="hasil2">
+                    <label for="N1">jumlah data populasi 1 (N1)</label>
+                    <p id="N1"></p>
+                    <label for="X1">jumlah sukses (X1)</label>
+                    <p id="X1"></p>
+                    <label for="N2">jumlah data populasi 2 (N2)</label>
+                    <p id="N2"></p>
+                    <label for="X2">jumlah sukses (X2)</label>
+                    <p id="X2"></p>
+                    <label for="p1topi">estimasi p1</label>
+                    <p id="p1topi"></p>
+                    <label for="p2topi">estimasi p2</label>
+                    <p id="p2topi"></p>
+                    <div>
                         <span id="cl2_bawah"></span>
-                        <span > < p < </span>
-                        <span id="cl2_atas"></span>
+                        <span>
+                            < p < </span>
+                                <span id="cl2_atas"></span>
                     </div>
+
+
                 </div>
+            </div>
         </div>
     </div>
 

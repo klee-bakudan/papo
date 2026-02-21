@@ -2,6 +2,10 @@ const paragraf = document.getElementById("hitungnow")
 const hitung = document.getElementById("hitungnow")
 const inputbtn = document.getElementById("inputbtn")
 
+// const hitung2 = document.getElementById("hitungnow2")
+// const hasil2 = document.getElementById("hasil2")
+// const inputbtn2 = document.getElementById("inputbtn2")
+
 const allform = document.querySelectorAll('form')
 const firstform = allform[0]
 const secondform = allform[1]
@@ -10,6 +14,12 @@ hitung.addEventListener('click', function () {
     paragraf.classList.add("hide")
     inputbtn.classList.add("show")
 })
+
+// hitung2.addEventListener('click', function () {
+//     hasil2.classList.add("hide2")
+//     inputbtn2.classList.add("show2")
+// })
+
 
 function tampilhasil1() {
     const hasiln = document.getElementById("N")
@@ -53,25 +63,28 @@ function input1() {
 
 
 firstform.addEventListener('submit', function (event) {
-    const inputx = document.getElementById('hitungn')
-    const inputn = document.getElementById('hitungx')
+    const inputx = document.getElementById('hitungx')
+    const inputn = document.getElementById('hitungn')
     const inputa = document.getElementById('hitunga')
-    const hitungn = inputn.value
     const hitungx = inputx.value
+    const hitungn = inputn.value
     const hitunga = inputa.value
-    if (hitungn == '') {
-        alert("nilai n tidak boleh kosong")
-        event.preventDefault()
-    }
     if (hitungx == '') {
         alert("nilai x tidak boleh kosong")
         event.preventDefault()
+    }
+
+    if (hitungn == '') {
+            alert("nilai n tidak boleh kosong")
+            event.preventDefault()
+        
     }
     if (hitunga == '') {
         alert("nilai alpha tidak boleh kosong")
         event.preventDefault()
     }
-    if (hitungn < hitungx) {
+
+    if (hitungx > hitungn){
         alert("x tidak boleh lebih besar dari n")
         event.preventDefault()
     }
@@ -82,6 +95,7 @@ firstform.addEventListener('submit', function (event) {
 
 
 // hitung 2 pop
+
 function tampilhasil2() {
     const hasiln1 = document.getElementById("N1")
     hasiln1.innerHTML = localStorage.getItem("N1")
@@ -136,7 +150,7 @@ function input2() {
     document.getElementById("hitungx2").innerHTML = x2;
     document.getElementById("hitunga2").innerHTML = alpha;
     event.preventDefault()
- 
+
 }
 
 secondform.addEventListener('submit', function (event) {
@@ -150,7 +164,7 @@ secondform.addEventListener('submit', function (event) {
     const hitungn2 = inputn2.value
     const hitungx2 = inputx2.value
     const hitunga = inputa2.value
-     
+
 
 
     hitung2(hitungx1, hitungn1, hitungx2, hitungn2, hitunga)

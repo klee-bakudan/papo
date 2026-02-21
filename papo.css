@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     background-color: #FFEE58;
-    height: 100vh;
+    height: 100%;
 }
 
 .judul {
@@ -82,9 +82,49 @@ body {
     display: block;
 }
 
+.hide2 {
+    display: none;
+}
+
+.show2 {
+    display: block;
+}
+
+
 .input1 {
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: -20px;
+}
+
+.hasil1 {
+  display: grid;
+  /* bikin 2 kolom */
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px 20px;
+  right: -60px;
+}
+.hasil1 p{
+    margin: 0;
+}
+
+.input2{
+    display: flex;
+    flex-direction: column;
+}
+
+.hasil2 {
+  display: grid;
+  /* bikin 2 kolom */
+  grid-template-columns: 1fr 1fr; 
+  position: relative;
+  gap: 10px 20px;
+  
+}
+
+.hasil2 p {
+  margin: 0;
 }
 
 
