@@ -27,6 +27,32 @@
     padding-top: 30px;
 }
 
+#examplemenu{
+    position: relative;  
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.cascade{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+}
+
+.cascade a {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+
+#examplemenu:hover .cascade {
+    display: block;
+}
+
+
 .pop1 {
     font-family: "Pixel Game";
     color: #E62C67;
