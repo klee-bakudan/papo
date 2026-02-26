@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     background-color: #FFEE58;
-    height: 100%;
+    height: 100vh;
 }
 
 .judul {
@@ -80,6 +80,11 @@ body {
 
 .show {
     display: block;
+}
+
+.inputbtn2 {
+    display: none;
+    top: 1000px;
 }
 
 .hide2 {

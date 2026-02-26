@@ -2,9 +2,10 @@ const paragraf = document.getElementById("hitungnow")
 const hitung = document.getElementById("hitungnow")
 const inputbtn = document.getElementById("inputbtn")
 
-// const hitung2 = document.getElementById("hitungnow2")
-// const hasil2 = document.getElementById("hasil2")
-// const inputbtn2 = document.getElementById("inputbtn2")
+const hitungnow2 = document.getElementById("hitungnow2")
+const hasil2 = document.getElementById("hasil2")
+const inputbtn2 = document.getElementById("inputbtn2")
+
 
 const allform = document.querySelectorAll('form')
 const firstform = allform[0]
@@ -15,11 +16,10 @@ hitung.addEventListener('click', function () {
     inputbtn.classList.add("show")
 })
 
-// hitung2.addEventListener('click', function () {
-//     hasil2.classList.add("hide2")
-//     inputbtn2.classList.add("show2")
-// })
-
+hitungnow2.addEventListener('click', function () {
+    hitungnow2.classList.add("hide2")
+    inputbtn2.classList.add("show2")
+})
 
 function tampilhasil1() {
     const hasiln = document.getElementById("N")
